@@ -1,0 +1,48 @@
+\input cgem
+
+\def\slidecolor{black}
+\def\textcolor {white}
+
+\newdimen\logoheight
+\def\logomines{\global\logoheight=2.5in \XeTeXpicfile logo/mines-logo-dark.png height \logoheight}
+\def\logocgem {\global\logoheight=2in \XeTeXpicfile logo/cgem-logo-dark.png  height \logoheight}
+
+\def\emdash{\char"2014}
+
+\largesans
+\begingroup\color\textcolor
+
+%% Title
+\backgroundcolor\slidecolor
+\vskip 2cm
+\centerline{\giantbf Title / Hook}
+
+\vfil
+\centerline{\normalbf R~Nate~Crummett \emdash \kern 5pt Yaoguo~Li}
+
+\vskip 5mm
+\centerline{\begingroup\color{cgemblue}\smallit Center for Gravity, Electric \& Magnetic Studies\endgroup}
+
+\vskip 3mm
+\centerline{\begingroup\color{cgemblue}\smallit Colorado School of Mines\endgroup}
+
+\vskip -5.2cm
+\hbox{\vbox{\logomines} \hskip 27cm \vbox{\logocgem \kern 7mm}}
+\eject
+
+%% Second
+\backgroundcolor\slidecolor
+
+\vfil
+\pagenumber
+\eject
+
+%% Reference
+\backgroundcolor\slidecolor
+\vskip 1cm
+\centerline{\hugebf References}
+
+\vfil
+\endgroup % white
+\eject
+\end
